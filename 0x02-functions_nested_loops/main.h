@@ -1,6 +1,12 @@
-#ifdef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
 
-int _putchar(c);
+/*
+ * File: main.h
+ * Auth: Hafsat Moshood
+ * Desc: Header file containing prototypes for all functions
+ * used in the 0x02-functions_nested_loops directory.
+ */
 
-#endif /* _MAIN_H_ */
+int _putchar(char c);
+
