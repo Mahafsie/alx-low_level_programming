@@ -9,21 +9,17 @@ nclude "main.h"
  *
  * Return: char value
  */
-
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
-	int i;
-	int j;
+	char *temp = dest;
 
-	for (j = 0; dest[j] != '\0'; j++)
-	{}
+	while (*dest)
+		dest++;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
-	{
-		dest[j + i] = src[i];
-	}
-	dest[j + i] = '\0';
+	while (*src)
+		*dest++ = *src++;
 
-	return (dest);
-
+	*dest = '\0';
+	return (temp);
 }
+
